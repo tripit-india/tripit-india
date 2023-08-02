@@ -1,0 +1,10 @@
+/* MasonryImagesGallery.css */
+.slider-item {
+    padding: 8px; /* Adjust the value to create the desired gap between images */
+  }
+  .masonry__img{
+    transition: 0.3s;
+  }
+  .masonry__img:hover{
+    transform: scale(1.1);
+  }

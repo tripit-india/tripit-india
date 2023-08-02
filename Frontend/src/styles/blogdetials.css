@@ -1,0 +1,109 @@
+/* blogdetials.css */
+
+/* Top cover */
+.top_cover_image {
+  
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 60vh;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: -50px;
+  object-fit: cover;
+}
+
+.sub_heading {
+  color: #fff;
+  text-align: center;
+  font-weight: 700;
+}
+
+
+
+.cardImageContainer {
+  position: relative;
+  overflow: hidden;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.cardImage1 {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover .cardImage {
+  transform: scale(1.1);
+}
+
+.cardTitle {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.cardText {
+  color: #666;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 1.3rem;
+  margin: 1rem 0;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.subtitle {
+  margin-top: 2rem;
+}
+
+.subtitle h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.subtitle h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover ;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.subtitle p {
+  color: #000000;
+  font-weight: 400;
+  font-size: 20px;
+}
+.carddeacription{
+  font-size: 20px;
+  font-weight: 400;
+}

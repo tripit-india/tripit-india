@@ -1,0 +1,104 @@
+.footer{
+    padding-top:50px;
+}
+.about_tripit{
+    margin-left: 50px;
+}
+.discover{
+    margin-left: 30px;
+}
+.quick_links{
+    margin-left: 30px;
+}
+.contact_us{
+    margin-right: 50px;
+}
+.footer .logo img{
+    width:130px;
+    margin-bottom: 1rem;
+    margin-left: 0;
+    
+}
+.footer .logo p{
+    color: var(--text-color);
+}
+.social__link span a{
+    text-decoration: none;
+    color: var(--heading-color);
+    font-size: 1.2rem;
+}
+
+.footer__link-title{
+    color: var(--heading-color);
+    margin-bottom: 1rem;
+    font-weight: 700;
+    
+}
+
+.footer__quick-link li a{
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+}
+
+.copyright{
+    color: var(--text-color);
+    font-size: 1rem;
+    margin-top: 50px;
+}
+
+/* make it responsive */
+
+@media screen and (max-width: 992px) {
+    
+  }
+  
+  @media screen and (max-width: 576px) {
+    .about_tripit{
+        margin-left: 10px;
+    }
+    .logo{
+        align-items: center;
+        justify-content: center;
+    }
+    .logo p{
+        width: 95%;
+    }
+    .social__link{
+        margin: 0;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .discover{
+        display: none;
+
+    }
+    .discover2{
+        display: none;
+    }
+
+    .quick_links{
+        margin: 0;
+    }
+
+    .quick_links ul{
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .quick_links h5{
+        width: fit-content;
+        margin-left: 20px;
+        font-size: 1.5rem;
+    }
+    .contact_us h5{
+        width: fit-content;
+        margin-left: 20px;
+        font-size: 1.5rem;
+    }
+    .contact_us li{
+        margin-left: 20px;
+    }
+   }

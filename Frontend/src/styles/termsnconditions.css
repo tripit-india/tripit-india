@@ -1,0 +1,17 @@
+/* Add this CSS style to show bullets for list items */
+.tnc_heading{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.bullet-list {
+    list-style-type: disc; /* You can use 'circle' or 'square' for different bullet styles */
+    padding-left: 20px; /* Adjust the left padding to change the bullet indentation */
+  }
+  
+  /* Optional: Add some margin or padding to separate list items */
+  .bullet-list li {
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }

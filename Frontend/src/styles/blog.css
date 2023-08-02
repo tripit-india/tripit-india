@@ -1,0 +1,93 @@
+/* blog.css */
+
+/* Add a background color for the entire page */
+body {
+  background-color: #f8f8f8;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Update the top cover styling */
+.top_cover_blog {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('../assets/images/Blogs.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 45vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin-top: -50px;
+}
+
+.sub_heading {
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.cardImageContainer {
+  position: relative;
+  overflow: hidden;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.cardImage {
+  width: 100%;
+  height: 200px; /* Adjust the height as needed */
+  object-fit: cover;
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover .cardImage {
+  transform: scale(1.1);
+}
+
+.cardBody {
+  padding: 1.5rem;
+}
+
+.cardTitle {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700 !important;
+}
+
+.cardText {
+  color: #000000;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+  font-family: 500 !important;
+}
+
+.readMoreButton {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #0D5C75;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.readMoreButton:hover {
+  background-color: #0056b3;
+}
+.customCard{
+  padding-bottom: 40px;
+}
+.cardDescription{
+  font-size: 15px;
+  font-weight: 400;
+}

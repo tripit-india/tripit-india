@@ -1,0 +1,11 @@
+
+.pp h1, h3{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.pp_add{
+    margin-top: 80px;
+    width: 40%;
+}

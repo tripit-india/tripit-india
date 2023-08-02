@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+
+
+.services__title {
+    font-size: 2.3rem;
+    font-weight: 700;
+    color: #0D5C75;
+
+}
+.featured__tour-title{
+    font-size: 2.3rem;
+    font-weight: 600;
+}
+
+.experience__content h2{
+    font-size: 2.5rem;
+    margin-top: 1rem;
+    font-weight: 500;
+}
+
+.experience__content p{
+    font-size: 1.1rem;
+    color: var(--text-color);
+    margin-top: 1rem;
+}
+
+
+.gallery__title{
+    font-size: 2.3rem;
+    margin-bottom: 2.5rem;
+    margin-top: 1rem;
+    font-weight: 600;
+}
+
+.testimonial__title{
+    font-size: 2.3rem;
+    margin-top: 1rem;
+    font-weight: 600;
+}
+.section__subtitle{
+    font-size: 40px;
+    
+}
+
+.home-section {
+    position: relative;
+    height: 100vh; /* Adjust the height as per your preference */
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .home-img {
+    margin-top: -130px;
+    width: 100vw; /* Adjust the logo size as per your preference / / Place the logo in front of the video */
+    height: 950px;
+}
+.heading_home {
+    position: absolute;
+    top: 20%; /* Adjust the top position as needed */
+    left: 5%;
+    z-index: 2;
+    color: #fff; /* Optionally set the text color */
+    font-size: 100px; /* Optionally set the font size */
+    font-weight: bold; /* Optionally set the font weight */
+    font-family: "Montserrat", sans-serif;
+    opacity: 0; /* Start with opacity 0 */
+    transform: translateY(100px); /* Move the element 20px down */
+    animation: fadeInUp 2s forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1; /* Fade-in to full opacity */
+        transform: translateY(0); /* Move back to the original position */
+    }
+}
+
+.search-bar-container {
+    position: absolute;
+    top: 30%; /* Adjust as needed */
+    left: 4%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    
+    opacity: 0; /* Start with opacity 0 */
+    transform: translateY(-100px); /* Move the element 20px up */
+    animation: fadeInDown 2s forwards; 
+}
+@keyframes fadeInDown {
+    to {
+        opacity: 1; /* Fade-in to full opacity */
+        transform: translateY(0); /* Move back to the original position */
+    }
+}
+
+    
+@media screen and (max-width: 992px) {
+
+    .logo_home{
+        width: 150px;
+    }
+    
+    .services_title ,.featuredtour-title ,.gallerytitle,.testimonialtitle,.experience_content h2{
+        font-size: 2rem;
+    }
+
+}
+
+  @media screen and (max-width: 576px) {
+
+    
+    .heading_home{
+        font-size: 3.5rem;
+    }
+
+    .logo_home{
+        width: 100px;
+    }
+
+    .services_title,.featuredtour-title,.gallerytitle,.testimonialtitle,.experience_content h2{
+        font-size: 1.5rem;
+    }
+  }
+
+  .subtitle {
+    font-size: 3rem; /* Adjust the font size as per your preference */
+  }
+ /* /* Add this CSS style 
+ .title-with-line {
+    position: relative;
+  }
+  
+  .title-with-line::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;  Adjust the distance from the title to the line as needed 
+    left: 20%;
+    width: 800px;  Adjust the line width as needed 
+    border-bottom: 2px solid #0D5C75; /* Adjust the line color as needed 
+  }
+  */
+
+  .featureds__tour-title2{
+    font-size: 2.5rem;
+    color: rgb(13, 92, 117);
+  }

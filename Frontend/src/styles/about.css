@@ -1,0 +1,80 @@
+.top_cover_about{
+    background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url('../assets/images/InternationalTrip.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 45vh;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: -50px;
+    margin-bottom: 50px;
+}
+.sub_heading{
+    font-weight: 700;
+}
+.about__us h2{
+    font-weight: 700;
+}
+.about-img img{
+    width: 100%;
+    height: 800px;
+    border-radius: 20px;
+    border: 1px solid var(--secondary-color);
+    object-fit: cover;
+    margin-top: 40px;
+}
+.team_container{
+    background: #a5d1e1;
+}
+.my_details{
+    width: 100%;
+    height: 400px !important;
+    border-radius: 20px;
+    margin-left: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.card-image{
+    width: 100%;
+    height: 400px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.nameOwn{
+    font-size: 25px;
+    font-weight: 500;
+}
+.back-image-01{
+    width: 100%;
+    z-index: -1;
+    padding-top: -50px;
+    margin-top: 100px;
+}
+
+
+@media screen and (max-width: 992px) {
+    
+}
+
+@media screen and (max-width: 576px) {
+    .team_container{
+        width: fit-content;
+    }
+    .team_div{
+        width: fit-content;
+    }
+    .my_details{
+        width: 100%;
+        border-radius: 20px;
+        margin: auto;
+    }
+ }
