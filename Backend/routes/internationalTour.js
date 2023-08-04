@@ -1,19 +1,19 @@
 import express from "express";
 import { createinternationalTour, deleteinternationalTour,getAllinternationalTour,getSingleinternationalTour,updateinternationalTour,getinternationalTourBySearch,getFeaturedinternationalTour,getinternationalTourCount} from "../controllers/internationalTour.js";
-import {verifyAdmin} from '../utils/verifyToken.js'
+
 
 
 
 const router = express.Router();
 
 // Create a new internationalTour
-router.post("/",verifyAdmin, createinternationalTour);
+router.post("/", createinternationalTour);
 
 // Update a internationalTour
-router.put("/:id",verifyAdmin, updateinternationalTour);
+router.put("/:id", updateinternationalTour);
 
 // Delete a internationalTour
-router.delete("/:id",verifyAdmin, deleteinternationalTour);
+router.delete("/:id", deleteinternationalTour);
 
 // Get a single internationalTour
 router.get("/:id", getSingleinternationalTour);
