@@ -29,9 +29,6 @@
     object-fit: cover;
     margin-top: 40px;
 }
-.team_container{
-    background: #a5d1e1;
-}
 .my_details{
     width: 100%;
     height: 400px !important;
@@ -43,6 +40,7 @@
     justify-content: center;
     text-align: center;
 }
+
 .card-image{
     width: 100%;
     height: 400px;

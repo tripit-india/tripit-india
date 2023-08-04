@@ -19,12 +19,14 @@ const MasonryImagesGallery = () => {
         breakpoint: 992,
         settings: {
           slidesToShow: 2,
+          dots: false,
         },
       },
       {
         breakpoint: 768,
         settings: {
           slidesToShow: 1,
+          dots: false
         },
       },
     ],

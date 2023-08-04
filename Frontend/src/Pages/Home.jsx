@@ -11,6 +11,8 @@ import Testimonial from '../component/Testimonial/Testimonial';
 import home from '../assets/images/home.png'
 import CustomTrips from '../shared/CustomTrips'
 
+
+
 const Home = () => {
     useEffect(()=>{
         window.scrollTo(0,0)

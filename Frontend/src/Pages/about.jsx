@@ -3,17 +3,14 @@ import '../styles/about.css';
 import { Container, Row, Col, Card, CardBody } from 'reactstrap';
 import aboutus from '../assets/images/about-us.jpg';
 import owner from '../assets/images/owner.png';
-import S1 from '../assets/images/23.jpeg';
-import S2 from '../assets/images/234.jpg';
+import S1 from '../assets/images/anjali.jpg';
+import S2 from '../assets/images/shivani.jpg';
 import sahil from '../assets/images/Coder.jpeg'
 import yash from '../assets/images/Yash.jpg'
 
-import Back3 from '../assets/images/03.png'
-
 const About = () => {
-    const primaryColor = "#fff";
     const titleStyle = {
-        color: primaryColor,
+        color: 'var(--primary-color)',
         paddingBottom: "10px",
         
         textAlign: "center",
@@ -66,10 +63,7 @@ Over the years, we have ventured into the unexplored corners of the world, exper
       </Container>
     </section>
 
-
-  
-
-    <section className="team_container align-items-center" style={{ backgroundImage: `url(${Back3})` }}>
+    <section className="team_container align-items-center">
       <h2 className='Title 'style={titleStyle}>Our Team</h2>
       <div className="team_div d-flex justify-content-center">
         <div className="row">
