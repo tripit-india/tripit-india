@@ -4,7 +4,7 @@ import { Container, Row } from 'reactstrap';
 
 import { BASE_URL } from '../utils/config.js';
 
-const CustomTrips = ({ tour }) => {
+const CustomTrips = () => {
   const [tourLocations, setTourLocations] = useState('');
   const [fullName, setFullName] = useState('');
   const [phone, setPhone] = useState('');
@@ -47,8 +47,9 @@ const CustomTrips = ({ tour }) => {
       <Container className='customCont'>
         <Row>
             <div className='custom__content'>
-              <h2>Request Custom Trips</h2>
+              
               <form onSubmit={handleSubmit}>
+                <h2>Request Custom Trips</h2>
                 <div className='custom__input'>
                   <input
                     type="text"

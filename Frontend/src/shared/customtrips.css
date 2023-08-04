@@ -1,7 +1,7 @@
 .customSection{
     background: #A5D1E1;
     padding: 0;
-    margin-top: 3rem;
+    margin-top: 2rem;
 }
 
 .custom__content{
@@ -56,29 +56,34 @@
 @media screen and (max-width: 992px) {
     .custom__content h2 {
         font-size: 2rem; /* Change font size for h2 at this breakpoint */
-    }
-    .custom__content form{
+        width: fit-content;
         align-items: center;
         justify-content: center;
+        margin: 0 auto;
     }
     .custom__input {
       /* Add any specific styles for the input fields at this breakpoint */
       display: flex;
       flex-direction: column;
-      width: 70%;
+      width: fit-content;
+      padding-top: 30px;
+      align-items: center;
+      justify-content: center;
+      margin: 40px auto;
     }
-    .custom__input input {
+    .custom__input input{
       margin-bottom: 10px;
       padding: 10px;
-      border: 1px solid #ccc;
+      border-bottom: 1px solid #ccc;
       border-radius: 5px;
+      width:500px
     }
     .custom__input button {
-      width: 100%;
+      width: 80%;
     }
     .custom__content p {
       /* Add any specific styles for the paragraph element at this breakpoint */
-      font-size: 14px;
+      font-size: 18px;
       line-height: 1.6;
     }
   }
@@ -93,19 +98,10 @@
     }
     .custom__input {
       /* Add any specific styles for the input fields at this breakpoint */
-      display: flex;
-      flex-direction: column;
       width: 100%;
     }
     .custom__input input {
         width: 90%;
-      margin-bottom: 10px;
-      padding: 10px;
-      border: 1px s olid #ccc;
-      border-radius: 5px;
-    }
-    .custom__input button {
-      width: 100%;
     }
   }
   

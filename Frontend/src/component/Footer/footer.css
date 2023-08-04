@@ -50,10 +50,10 @@
 /* make it responsive */
 
 @media screen and (max-width: 992px) {
+    .discover{
+        display: none;
+    }
     
-  }
-  
-  @media screen and (max-width: 576px) {
     .about_tripit{
         margin-left: 10px;
     }
@@ -62,7 +62,8 @@
         justify-content: center;
     }
     .logo p{
-        width: 95%;
+        margin-left: 10px;
+        width: 90%;
     }
     .social__link{
         margin: 0;
@@ -70,15 +71,6 @@
         justify-content: center;
         margin-bottom: 20px;
     }
-
-    .discover{
-        display: none;
-
-    }
-    .discover2{
-        display: none;
-    }
-
     .quick_links{
         margin: 0;
     }
@@ -89,7 +81,6 @@
         
     }
     .quick_links h5{
-        width: fit-content;
         margin-left: 20px;
         font-size: 1.5rem;
     }
@@ -101,4 +92,4 @@
     .contact_us li{
         margin-left: 20px;
     }
-   }
+  }
