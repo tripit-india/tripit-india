@@ -5,6 +5,7 @@ import styles from '../styles/blog.css'; // Import the CSS module
 import { BASE_URL } from '../utils/config.js';
 
 const truncateDescription = (description) => {
+
   const words = description.split(' ');
   if (words.length > 20) {
     return words.slice(0, 20).join(' ') + '...';
@@ -13,6 +14,10 @@ const truncateDescription = (description) => {
 };
 
 const BlogPage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  })
+
   // State to store the fetched blog data
   const [blogs, setBlogs] = useState([]);
   const [loading, setLoading] = useState(true);

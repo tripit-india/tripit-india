@@ -5,6 +5,10 @@ import  '../styles/blogdetials.css';
 import { BASE_URL } from '../utils/config.js';
 
 const BlogDetailPage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  })
+
   const { id } = useParams(); 
   const [blogDetail, setBlogDetail] = useState(null);
   const [loading, setLoading] = useState(true);

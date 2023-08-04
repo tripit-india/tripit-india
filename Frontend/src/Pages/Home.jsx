@@ -34,7 +34,7 @@ const Home = () => {
                 <img src={home} alt="" className="home-img" />
                 
             </section>
-
+            
             
         <section>
             <Container>
@@ -59,7 +59,7 @@ const Home = () => {
             </Container> 
         </section>
         {/* */}
-
+        <br/> <br/> 
         {/* */}
         <section id="featured-tours">
            <Container>
@@ -72,7 +72,7 @@ const Home = () => {
             </Container> 
         </section>
         {/* */}
-
+        <br/> <br/> 
         {/* */}
         <section  id='img-gallery'>
             <Container>
@@ -87,7 +87,7 @@ const Home = () => {
             </Container>
         </section>
         {/* */}
-
+        <br/> <br/> 
 
         {/* */}
         <section  id='testimonial'>

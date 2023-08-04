@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react';
+import React, { useState, useContext,useEffect } from 'react';
 import {  Row, Col, Form, FormGroup, Button } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import '../styles/login.css';
@@ -10,6 +10,9 @@ import { BASE_URL } from '../utils/config.js';
 import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  })
   const [credentials, setCredentials] = useState({
     email: undefined,
     password: undefined,

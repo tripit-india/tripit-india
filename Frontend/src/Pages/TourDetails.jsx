@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import '../styles/tour-details.css';
 import { Container, Row, Col, Button } from 'reactstrap';
 import { useParams } from 'react-router-dom';
@@ -9,6 +9,9 @@ import { BASE_URL } from '../utils/config.js';
 import { ThingsToCarry } from './OtherInfo';
 
 const TourDetails = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  })
   const { id } = useParams();
 
   // State to manage the visibility of different sections

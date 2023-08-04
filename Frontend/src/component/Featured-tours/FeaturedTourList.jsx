@@ -61,6 +61,7 @@ const FeaturedTourList = () => {
     width: 'fit-content',
     padding: '10px', // Optional padding for the button container
     color: '#0d5c75',
+    
   };
   
   const arrowStyle = {

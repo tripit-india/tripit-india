@@ -1,4 +1,4 @@
-import React,{useState} from 'react'; 
+import React, { useState,useEffect } from 'react';
 
 import { Container,Row,Col } from 'reactstrap';
 import { useLocation } from 'react-router-dom';
@@ -7,6 +7,9 @@ import Newsletter from './../shared/CustomTrips'
 import '../styles/searchdetails.css'
 
 const SearchResultList =() => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      })
     const location = useLocation();
     const [data] =useState(location.state);
 
