@@ -10,6 +10,7 @@ const Booking = ({ tour }) => {
   const { price, title ,tourDuration} = tour;
   const navigate = useNavigate();
   const { user } = useContext(AuthContext);
+  const navigateToLogin = useNavigate();
 
   const [booking, setBooking] = useState({
     userId: user && user._id,
@@ -40,7 +41,7 @@ const Booking = ({ tour }) => {
 
     try {
       if (!user || user === undefined || user === null) {
-        alert('Please Sign in');
+        navigateToLogin('/login');
         return;
       } else {
         const res = await fetch(`${BASE_URL}/booking`, {

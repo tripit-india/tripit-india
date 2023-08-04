@@ -4,7 +4,7 @@ import { Container, Row } from 'reactstrap';
 
 import { BASE_URL } from '../utils/config.js';
 
-const CustomTrips = ({ tour }) => {
+const CustomTrips = () => {
   const [tourLocations, setTourLocations] = useState('');
   const [fullName, setFullName] = useState('');
   const [phone, setPhone] = useState('');

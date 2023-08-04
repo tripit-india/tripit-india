@@ -1,40 +1,82 @@
-import React from 'react'; 
+import React, { useRef } from 'react';
 import Slider from 'react-slick';
 
-const Testimonial =() => {
+const Testimonial = () => {
+  const sliderRef = useRef(null);
 
-    const settings = {
-        dots: true,
-        infinite: true,
-        autoplay: true,
-        speed: 1000,
-        swipeToSlide: true,
-        autoplaySpeed: 2000,
-        slidesToShow: 3,
-        responsive: [
-            {
-                breakpoint: 992,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1,
-                    infinite: true,
-                    dots: true,
-                },
-            },
-            {
-                breakpoint: 576,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                },
-            },
-        ],
-    };
-    
+  const settings = {
+    dots: false,
+    infinite: true,
+    autoplay: true,
+    speed: 1000,
+    swipeToSlide: true,
+    autoplaySpeed: 2000,
+    slidesToShow: 3,
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
+
+  const sliderArrowContainerStyle = {
+    position: 'relative',
+    top: '100%',
+    left: '50%',
+    transform: 'translateX(-50%)',
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    width: 'fit-content',
+    padding: '10px',
+    color: '#0d5c75',
+  };
+
+  const arrowStyle = {
+    fontSize: '40px',
+    color: '#0d5c75',
+    cursor: 'pointer',
+    borderRadius: '50%',
+    width: '50px',
+    height: '50px',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    boxShadow: '0 9px 4px rgba(0, 0, 0, 0.1)',
+    transition: 'background-color 0.3s ease-in-out',
+  };
+
+  const arrowStyleHover = {
+    ...arrowStyle,
+    backgroundColor: '#0d5c75',
+  };
+
+  const goToPrevSlide = () => {
+    sliderRef.current.slickPrev();
+  };
+
+  const goToNextSlide = () => {
+    sliderRef.current.slickNext();
+  };
 
 
-    return (
-        <Slider {...settings}>
+
+  return (
+    <div>
+      <Slider {...settings} ref={sliderRef}>
         <div className='tesimonial py-4 px-3'>
             <p>
             An absolutely thrilling experience! The Ladakh 
@@ -132,9 +174,34 @@ const Testimonial =() => {
             </div>
         </div>
         </Slider>
-        );
+      <div style={sliderArrowContainerStyle}>
+        <div
+          style={arrowStyle}
+          onClick={goToPrevSlide}
+          onMouseEnter={() => {
+            Object.assign(arrowStyle, arrowStyleHover);
+          }}
+          onMouseLeave={() => {
+            Object.assign(arrowStyle, { ...arrowStyle, backgroundColor: '' });
+          }}
+        >
+          &#8249;
+        </div>
+        <div
+          style={arrowStyle}
+          onClick={goToNextSlide}
+          onMouseEnter={() => {
+            Object.assign(arrowStyle, arrowStyleHover);
+          }}
+          onMouseLeave={() => {
+            Object.assign(arrowStyle, { ...arrowStyle, backgroundColor: '' });
+          }}
+        >
+          &#8250;
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default Testimonial;
-
-
