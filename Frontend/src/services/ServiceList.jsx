@@ -14,7 +14,7 @@ const serviceData =[
     },
     {
         imgUrl:guideImg,
-        title:"Travelling with strangers",
+        title:"Friendly Travel Buddies",
         desc:"Solo traveling can be an incredibly rewarding and transformative experience. It offers a unique opportunity to discover new places, cultures, and yourself. Cherry on the cake is travelling with strangers and making lifetime of memories and new friends."
     },
     {

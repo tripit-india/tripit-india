@@ -47,8 +47,9 @@ const CustomTrips = () => {
       <Container className='customCont'>
         <Row>
             <div className='custom__content'>
-              <h2>Request Custom Trips</h2>
+              
               <form onSubmit={handleSubmit}>
+                <h2>Request Custom Trips</h2>
                 <div className='custom__input'>
                   <input
                     type="text"

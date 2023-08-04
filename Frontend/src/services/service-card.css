@@ -1,6 +1,6 @@
 .service__item{
     padding: 1rem;
-    height: 290px;
+    height: fit-content;
     border-bottom: 1px solid #0D5C75;
     border-right: 1px solid #0D5C75; 
     border-radius: 0.5rem;
