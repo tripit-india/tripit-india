@@ -133,15 +133,15 @@ const TourDetails = () => {
                       ₹{price} Person{' '}
                     </span>
                     <Button className='btn Secondary__btn' onClick={() => setShowFullDescription(!showFullDescription)}>
-                      {showFullDescription ? 'Show Less' : 'Read Full Description'}
+                      {showFullDescription ? 'Show Less' : 'Full Description'}
                     </Button>
                     
                   </div>
                   {/* Conditionally render description based on showFullDescription state */}
                   {showFullDescription && <p>{desc}</p>}
 
-                  {/*====== tour review section ======*/}
-                  <div className='tour__reviews mt-4'>
+                  {/*====== tour detailssection ======*/}
+                  <div className='tour__details mt-4'>
                     <div className='d-flex justify-content-between'>
                       <Button className='btn primary__btn' onClick={fetchInternityData}>
                         Itinerary

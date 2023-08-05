@@ -91,26 +91,18 @@
       max-width: 100%;
     }
   
-    .my_details {
-      height: auto !important;
-    }
-  
     .about-img img {
       height: auto;
     }
-  }
-  
 
-@media screen and (max-width: 576px) {
     .team_container{
-        width: fit-content;
-    }
+      width: fit-content;
+  }
     .team_div{
         width: fit-content;
     }
-    .my_details{
-        width: 100%;
-        border-radius: 20px;
-        margin: auto;
+    .card-image{
+      width: 80%;
     }
- }
+  }
+  
